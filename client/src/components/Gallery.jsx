@@ -84,7 +84,7 @@ function Gallery() {
         <Link to={"/print/" + print.id} key={print.id} className="gallery__item">
             <figure>
                 <img src={print.url} alt="" />
-                <figcaption>{'@' + print.artist}</figcaption>
+                <figcaption>{print.ig}</figcaption>
             </figure>
 
         </Link>

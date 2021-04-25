@@ -7,7 +7,7 @@ function Footer() {
                 <p>©2021 Art Tender</p>
             </div>
             <div>
-                <a href="">Get in touch</a>
+                <a href="#">Get in touch</a>
             </div>
             <div>
                 <p>More info</p>

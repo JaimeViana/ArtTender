@@ -9,6 +9,9 @@ function Detail() {
 
     const { id } = useParams();
     let nextId = parseInt(id) + 1;
+    let showArrow = (nextId > 0 && nextId <= 14);
+    console.log(showArrow, 'Show arrow');
+
     const print = prints.find(print => print.id == id);
 
     return (
@@ -20,7 +23,7 @@ function Detail() {
                         <img src="/pics/x-18.svg" alt="" />
                     </Link>
                 </div>
-                <div className="flecha">
+                <div className="flecha" style={{ display: showArrow ? 'block' : 'none' }}>
                     <Link to={'/print/' + nextId} >
                         <img id="btn_next" src="/pics/artTender-GRID-16.svg" alt="" />
                     </Link>
@@ -31,13 +34,11 @@ function Detail() {
             <div className="detail__info">
                 <div>
                     <h1>{print.title}</h1>
-                    <p>{print.artist} — <Link className="cursive" to={'https://www.instagram.com/' + print.ig}>{print.ig}</Link>{ }</p>
+                    <p>{print.artist} — <a href={'https://www.instagram.com/' + print.ig} target="_blank" rel="noreferrer noopener" className="cursive" >@{print.ig}</a></p>
                     <p className="cursive">£30'00</p>
                     <h3>PURCHASE</h3>
-                    <a className="cursive" href="">arttender21@gmail.com</a>
+                    <a className="cursive" href="mailto:arttender21@gmail.com">arttender21@gmail.com</a>
                 </div>
-
-
             </div>
         </div>
     )

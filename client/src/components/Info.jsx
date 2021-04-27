@@ -3,11 +3,11 @@ import React from 'react'
 function Info() {
     return (
         <div className="info__grid">
-            <div>
+            <div className="one">
                 <p> <span>Art Tender</span> is an initiative that connects a conscious global network of artists united against a singular cause, the fight for gender equality.</p>
 
                 <p>
-                    All profit from print sales will be donated to Tender, an arts charity working with young people to prevent domestic abuse and sexual violence through creative projects.</p>
+                    All profit from print sales will be donated to <a href="https://tender.org.uk/" target="_blank" rel="noreferrer noopener">Tender</a>, an arts charity working with young people to prevent domestic abuse and sexual violence through creative projects.</p>
 
                 <p className="cursive">The sale is open <br /> during May 2021.</p>
 
@@ -22,11 +22,11 @@ function Info() {
                 <p>All artworks will be unsigned and available in a time-frame edition limited by the duration of the fund raising period.</p>
             </div>
 
-            <div>
+            <div className="two">
                 <p>To make a donation by buying one of the prints, please send us an email to:
                     </p>
                 <p className="cursive">
-                    <span>arttender21@gmail.com</span>
+                    <a href="mailto:arttender21@gmail.com">arttender21@gmail.com</a>
                 </p>
                 <p>
                     with the photograph(s) you’re interested in and the amount you would like to donate.</p>
@@ -38,7 +38,7 @@ function Info() {
 
                 <h3>GRACIAS</h3>
             </div>
-            <div className="center">
+            <div className="three center">
                 <img src="/pics/printInfo1.svg" alt="" />
                 <img src="/pics/printInfo2.svg" alt="" />
             </div>

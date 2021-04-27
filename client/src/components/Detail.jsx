@@ -15,18 +15,29 @@ function Detail() {
         <div className="detail__grid">
             <img src={"/pics/photo" + id + ".jpg"} alt="" />
             <div className="detail__btns">
-                <Link to={'/'}>
-                    <img src="/pics/x-18.svg" alt="" />
-                </Link>
-                <Link to={'/print/' + nextId} >
-                    <img id="btn_next" src="/pics/artTender-GRID-16.svg" alt="" />
-                </Link>
+                <div className="cross">
+                    <Link to={'/'}>
+                        <img src="/pics/x-18.svg" alt="" />
+                    </Link>
+                </div>
+                <div className="flecha">
+                    <Link to={'/print/' + nextId} >
+                        <img id="btn_next" src="/pics/artTender-GRID-16.svg" alt="" />
+                    </Link>
+                </div>
+
             </div>
 
             <div className="detail__info">
-                <h1>{print.title}</h1>
-                <p>{print.artist}</p>
-                <p>From £30</p>
+                <div>
+                    <h1>{print.title}</h1>
+                    <p>{print.artist} — <Link className="cursive" to={'https://www.instagram.com/' + print.ig}>{print.ig}</Link>{ }</p>
+                    <p className="cursive">£30'00</p>
+                    <h3>PURCHASE</h3>
+                    <a className="cursive" href="">arttender21@gmail.com</a>
+                </div>
+
+
             </div>
         </div>
     )

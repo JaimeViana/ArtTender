@@ -9,9 +9,6 @@ function Footer() {
             <div>
                 <a href="#">Get in touch</a>
             </div>
-            <div>
-                <p>More info</p>
-            </div>
         </footer>
     )
 }

@@ -13,7 +13,7 @@ function Navbar() {
                 </Link>
                 <ul className="navbar__menu">
                     <li className="navbar__item hoverable">
-                        <Link to={"/info"} className="navbar__links" id="info-page">
+                        <Link to={"/info"} className="navbar__links info">
                             Info
                         </Link>
                     </li>

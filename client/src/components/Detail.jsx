@@ -16,16 +16,16 @@ function Detail() {
 
     return (
         <div className="detail__grid">
-            <img src={"/pics/photo" + id + ".jpg"} alt="" />
+            <img src={"/pics/photo" + id + ".jpg"} alt="print for sale" />
             <div className="detail__btns">
                 <div className="cross">
                     <Link to={'/'}>
-                        <img src="/pics/x-18.svg" alt="" />
+                        <img src="/pics/x-18.svg" alt="go back to home page" />
                     </Link>
                 </div>
                 <div className="flecha" style={{ display: showArrow ? 'block' : 'none' }}>
                     <Link to={'/print/' + nextId} >
-                        <img id="btn_next" src="/pics/artTender-GRID-16.svg" alt="" />
+                        <img id="btn_next" src="/pics/artTender-GRID-16.svg" alt="go to the next print" />
                     </Link>
                 </div>
 

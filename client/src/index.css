@@ -16,15 +16,48 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  cursor: none;
+  background-color: #fefefe;
+}
+
 a {
   text-decoration: none;
   color: black;
   font-family: 'Migra Italic';
-  cursor: pointer;
+  cursor: unset;
 }
 
 a:hover {
   color: #D00000;
+}
+
+/* CURSOR */
+
+.cursor {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #121212;
+  border-radius: 100%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor--hidden {
+  opacity: 0;
+}
+
+.cursor--link-hovered {
+  transform: translate(-50%, -50%) scale(2);
+  background-color: #fefefe;
+}
+
+.cursor--clicked {
+  transform: translate(-50%, -50%) scale(0.9);
+  background-color: #fefefe;
 }
 
 /* Navbar */
@@ -57,7 +90,6 @@ a:hover {
   color: #333333;
   display: flex;
   align-items: center;
-  cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
   mix-blend-mode: difference;
@@ -250,7 +282,6 @@ a:hover {
   height: 150px;
   width: 150px;
   margin: 0 auto;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {

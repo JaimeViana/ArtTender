@@ -11,7 +11,7 @@ function Gallery() {
 
         <Link to={"/print/" + print.id} key={print.id} className="gallery__item">
             <figure>
-                <img src={print.url} alt="" />
+                <img src={print.url} alt="print for sale" />
                 <figcaption>{print.artist}</figcaption>
             </figure>
         </Link>
@@ -27,7 +27,7 @@ function Gallery() {
             </div>
             <div className="gallery__arrow">
                 <a href="#">
-                    <img src="/pics/backtop.svg" alt="" />
+                    <img src="/pics/backtop.svg" alt="back to top" />
                 </a>
             </div>
         </div>

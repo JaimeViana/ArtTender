@@ -39,8 +39,8 @@ function Info() {
                 <h3>GRACIAS</h3>
             </div>
             <div className="three center">
-                <img src="/pics/printInfo1.svg" alt="" />
-                <img src="/pics/printInfo2.svg" alt="" />
+                <img src="/pics/printInfo1.svg" alt="info sizes" />
+                <img src="/pics/printInfo2.svg" alt="info sizes" />
             </div>
         </div>
     )

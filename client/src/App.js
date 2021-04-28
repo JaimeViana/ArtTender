@@ -12,12 +12,14 @@ import Detail from './components/Detail';
 import Navbar from './components/Navbar';
 import { DataProvider } from './components/DataProvider';
 import Footer from './components/Footer';
+import Cursor from './components/Cursor';
 
 
 function App() {
   return (
     <DataProvider>
       <Router>
+        <Cursor />
         <Navbar />
         <Switch>
           <Route path="/info">

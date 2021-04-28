@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { DataContext } from './DataProvider';
-import LazyLoad from 'react-lazyload';
 
 function Gallery() {
 

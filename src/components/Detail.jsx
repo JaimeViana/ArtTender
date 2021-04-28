@@ -10,13 +10,12 @@ function Detail() {
     const { id } = useParams();
     let nextId = parseInt(id) + 1;
     let showArrow = (nextId > 0 && nextId <= 14);
-    console.log(showArrow, 'Show arrow');
 
     const print = prints.find(print => print.id == id);
 
     return (
         <div className="detail__grid">
-            <img clasdName="centered__div__1" src={"/pics/photo" + id + ".jpg"} alt="print for sale" />
+            <img className="centered__div__1" src={"/pics/photo" + id + ".jpg"} alt="print for sale" />
             <div className="detail__btns centered__div__2">
                 <div className="cross">
                     <Link to={'/'}>

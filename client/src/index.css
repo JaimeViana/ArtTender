@@ -122,6 +122,30 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+@media screen and (min-width: 1025px) {
+  
+
+  .centered__div__2 {
+    width: 100px;
+    /* height: -1px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -60.5px;
+    margin-top: 38px;
+  }
+  
+  .centered__div__3 {
+    width: 400px;
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 168px;
+    margin-top: 0px;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .navbar__container {
       display: flex;
@@ -381,6 +405,17 @@ a:hover {
   font-size: 14px;
 }
 
+
+/* .centered__div__1 {
+  width: 600px;
+  height: 130px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 40px;
+  margin-top: 0px;
+} */
+
 .cursive {
   font-family: 'Migra Italic';
   font-size: 22px;
@@ -407,6 +442,44 @@ a:hover {
 
 .flecha {
   width: 25%;
+}
+
+@media screen and (min-width: 961px) and (max-width: 1024px) {
+
+  .detail__grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .detail__grid img {
+    width: 90%;
+    height: auto;
+  }
+
+  .detail__grid a {
+    width: 25%;
+  }
+
+  .detail__btns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    width: 100%;
+    margin-left: 82px;
+  }
+
+  .detail__info {
+    padding: 15px;
+  }
+
+  .flecha {
+    margin-left: 322px;
+    width: 12%;
+  }
+
+  .cross {
+    width: 12%;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -447,7 +520,7 @@ a:hover {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .detail__btns {
     margin-left: 20px;
   }

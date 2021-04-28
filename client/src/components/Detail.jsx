@@ -16,8 +16,8 @@ function Detail() {
 
     return (
         <div className="detail__grid">
-            <img src={"/pics/photo" + id + ".jpg"} alt="print for sale" />
-            <div className="detail__btns">
+            <img clasdName="centered__div__1" src={"/pics/photo" + id + ".jpg"} alt="print for sale" />
+            <div className="detail__btns centered__div__2">
                 <div className="cross">
                     <Link to={'/'}>
                         <img src="/pics/x-18.svg" alt="go back to home page" />
@@ -31,7 +31,7 @@ function Detail() {
 
             </div>
 
-            <div className="detail__info">
+            <div className="detail__info centered__div__3">
                 <div>
                     <h1>{print.title}</h1>
                     <p>{print.artist} — <a href={'https://www.instagram.com/' + print.ig} target="_blank" rel="noreferrer noopener" className="cursive" >@{print.ig}</a></p>

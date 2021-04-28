@@ -23,9 +23,13 @@ html, body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
   font-family: 'Migra Italic';
   cursor: unset;
+}
+
+#red {
+  color: #D00000;
 }
 
 a:hover {
@@ -653,4 +657,10 @@ footer a {
 .info {
   align-self: flex-end;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+  .info__grid .center {
+    padding-top: 0;
+  }
 }

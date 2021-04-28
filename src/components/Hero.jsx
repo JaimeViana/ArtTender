@@ -9,7 +9,7 @@ function Hero() {
                 <div className="hero__grid">
                     <p className="hero__description">Art Tender is a print sale of work by France, Spain and UK-based
                     photographers
-                    and artists. <br /> All proceeds will go to <a href="https://tender.org.uk/" target="_blank" rel="noreferrer noopener">Tender</a>, an arts charity working with young people
+                    and artists. <br /> All proceeds will go to <a href="https://tender.org.uk/" target="_blank" rel="noreferrer noopener" id="red">Tender</a>, an arts charity working with young people
                     to
                     prevent domestic abuse and sexual violence through creative projects.</p>
                     <p className="hero__description">

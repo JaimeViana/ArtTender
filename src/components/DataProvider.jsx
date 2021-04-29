@@ -49,7 +49,7 @@ export const DataProvider = (props) => {
         {
             id: 7,
             url: 'pics/photo7-min.jpg',
-            title: 'Belén holding all the sand she',
+            title: 'Belén holding all the sand she ever could',
             artist: 'Maite de Orbe',
             ig: 'maitedeorbe'
         },

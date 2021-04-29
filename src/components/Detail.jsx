@@ -18,12 +18,12 @@ function Detail() {
             <img className="centered__div__1" src={"/pics/photo" + id + ".jpg"} alt="print for sale" />
             <div className="detail__btns centered__div__2">
                 <div className="cross">
-                    <Link to={'/'}>
+                    <Link to={'/'} className="hoverable">
                         <img src="/pics/x-18.svg" alt="go back to home page" />
                     </Link>
                 </div>
                 <div className="flecha" style={{ display: showArrow ? 'block' : 'none' }}>
-                    <Link to={'/print/' + nextId} >
+                    <Link to={'/print/' + nextId} className="hoverable">
                         <img id="btn_next" src="/pics/artTender-GRID-16.svg" alt="go to the next print" />
                     </Link>
                 </div>
@@ -32,10 +32,10 @@ function Detail() {
 
             <div className="detail__info centered__div__3">
                 <div>
-                    <h1>{print.title}</h1>
+                    <h1 className="hoverable">{print.title}</h1>
                     <p>{print.artist} — <a href={'https://www.instagram.com/' + print.ig} target="_blank" rel="noreferrer noopener" className="cursive" >@{print.ig}</a></p>
                     <p className="cursive">£30'00</p>
-                    <h3>PURCHASE</h3>
+                    <h3 className="hoverable">PURCHASE</h3>
                     <a className="cursive" href="mailto:arttender21@gmail.com">arttender21@gmail.com</a>
                 </div>
             </div>

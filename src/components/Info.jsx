@@ -36,7 +36,7 @@ function Info() {
                 <p>Prints will be produced and shipped after May 31st.
                 Please note that the printing and shipping services are operating according to the current restrictions and are therefore experiencing some delays.</p>
 
-                <h3>GRACIAS</h3>
+                <h3 className="hoverable">GRACIAS</h3>
             </div>
             <div className="three center">
                 <img src="/pics/printInfo1.svg" alt="info sizes" />

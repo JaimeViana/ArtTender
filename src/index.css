@@ -29,19 +29,19 @@ a {
 }
 
 #red {
-  color: #D00000;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #D00000;
+  opacity: 0.8;
 }
 
 /* CURSOR */
 
 .cursor {
-  width: 25px;
-  height: 25px;
-  border: 2px solid #121212;
+  width: 16px;
+  height: 16px;
+  border: 1.2px solid #fff;
   border-radius: 100%;
   position: fixed;
   transform: translate(-50%, -50%);
@@ -55,7 +55,7 @@ a:hover {
 }
 
 .cursor--link-hovered {
-  transform: translate(-50%, -50%) scale(2);
+  /* transform: translate(-50%, -50%) scale(2); */
   background-color: #fefefe;
 }
 
@@ -108,6 +108,7 @@ a:hover {
 
 .navbar__item {
   height: 80px;
+  width: 124px;
 }
 
 .navbar__links {
@@ -123,7 +124,7 @@ a:hover {
 }
 
 .navbar__links:hover {
-  color: #D00000;
+  text-decoration: underline;
   transition: all 0.3s ease;
 }
 
@@ -194,7 +195,7 @@ a:hover {
 /* Hero Section */
 
 .hero {
-  line-height: 100%;
+  line-height: 110%;
 }
 
 .hero__container {

@@ -33,6 +33,7 @@ const Cursor = ({ state }) => {
     useEffect(() => {
         if (!isMobil && !isTab && !isIPad) {
             addEventListeners();
+            handleParagraphHoverEvents();
             handleLinkHoverEvents();
             handleButtonHoverEvents();
             handlePointerHoverEvents();
@@ -82,8 +83,15 @@ const Cursor = ({ state }) => {
         setHidden(false);
     };
 
+    const handleParagraphHoverEvents = () => {
+        document.querySelectorAll("p").forEach((el) => {
+            el.addEventListener("mouseover", () => setLinkHovered(true));
+            el.addEventListener("mouseout", () => setLinkHovered(false));
+        });
+    };
+
     const handleLinkHoverEvents = () => {
-        document.querySelectorAll("a").forEach((el) => {
+        document.querySelectorAll(".hoverable").forEach((el) => {
             el.addEventListener("mouseover", () => setLinkHovered(true));
             el.addEventListener("mouseout", () => setLinkHovered(false));
         });

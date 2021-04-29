@@ -25,8 +25,8 @@ function Gallery() {
                 </div>
             </div>
             <div className="gallery__arrow">
-                <a href="#">
-                    <img src="/pics/backtop.svg" alt="back to top" />
+                <a href="#" >
+                    <img src="/pics/backtop.svg" alt="back to top" className="hoverable" />
                 </a>
             </div>
         </div>

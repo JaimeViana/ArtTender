@@ -4,7 +4,7 @@ function Hero() {
     return (
         <div className="hero" id="home">
             <div className="hero__container">
-                <img src="/pics/logo.svg" alt="Art Tender logo" />
+                <img src="/pics/logo.svg" alt="Art Tender logo" className="hoverable" />
                 <p className="hero__description">Fundraising for equality</p>
                 <div className="hero__grid">
                     <p className="hero__description">Art Tender is a print sale of work by France, Spain and UK-based

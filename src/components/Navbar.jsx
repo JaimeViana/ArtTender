@@ -9,8 +9,8 @@ function Navbar() {
                     ART TENDER
                 </Link>
                 <ul className="navbar__menu">
-                    <li className="navbar__item hoverable">
-                        <Link to={"/info"} className="navbar__links info">
+                    <li className="navbar__item">
+                        <Link to={"/info"} className="navbar__links info hoverable">
                             Info
                         </Link>
                     </li>

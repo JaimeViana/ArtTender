@@ -12,6 +12,9 @@ function Detail() {
     let showArrow = (nextId > 0 && nextId <= 14);
 
     const print = prints.find(print => print.id == id);
+    const secondInstagram = print.ig2;
+    console.log(print.ig2);
+    console.log(secondInstagram == 'nuriaestre');
 
     return (
         <div className="detail__grid">
@@ -34,6 +37,9 @@ function Detail() {
                 <div>
                     <h1 className="hoverable">{print.title}</h1>
                     <p>{print.artist} — <a href={'https://www.instagram.com/' + print.ig} target="_blank" rel="noreferrer noopener" className="cursive" >@{print.ig}</a></p>
+                    {secondInstagram == 'nuriaestre' &&
+                        <a href={'https://www.instagram.com/' + print.ig2} target="_blank" rel="noreferrer noopener" className="cursive" >@{print.ig2}</a>
+                    }
                     <p className="cursive">£30'00</p>
                     <h3 className="hoverable">PURCHASE</h3>
                     <a className="cursive" href="mailto:arttender21@gmail.com">arttender21@gmail.com</a>

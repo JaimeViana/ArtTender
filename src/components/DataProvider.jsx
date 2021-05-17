@@ -100,7 +100,8 @@ export const DataProvider = (props) => {
             url: 'pics/photo14-min.jpg',
             title: '—',
             artist: 'Leia Goiria & Nuria Estremera',
-            ig: 'beia.a & @nuriaestre'
+            ig: 'beia.a',
+            ig2: 'nuriaestre'
         }
     ]);
 
